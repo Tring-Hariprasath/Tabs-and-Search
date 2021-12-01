@@ -13,9 +13,9 @@
     
 
 <div class="tab">
-  <button class="tablinks" onclick="openContent(event, 'Home')" id="defaultOpen"><i class="fa fa-home"></i>Home</button>
-  <button class="tablinks" onclick="openContent(event, 'About')"><i class="fa fa-pencil-square-o"></i>About</button>
-  <button class="tablinks" onclick="openContent(event, 'Contact')"><i class="fa fa-envelope"></i>Contact</button>
+  <button class="tablinks" onclick="openContent(event, 'Home')" id="defaultOpen"><span class="fa fa-home"></span>Home</button>
+  <button class="tablinks" onclick="openContent(event, 'About')"><span class="fa fa-pencil-square-o"></span>About</button>
+  <button class="tablinks" onclick="openContent(event, 'Contact')"><span class="fa fa-envelope"></span>Contact</button>
   <form class="search-container">
    
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a name">
@@ -53,9 +53,10 @@
 
 <div id="table">
     <table id="myTable" >
+        <caption>Table for Employee Details</caption>
         <tr class="header">
-          <th style="width:60%;">Name</th>
-          <th style="width:40%;">Role</th>
+          <th scope="row" style="width:60%;">Name</th>
+          <th scope="row" style="width:40%;">Role</th>
         </tr>
         <tr>
           <td>Adam </td>
